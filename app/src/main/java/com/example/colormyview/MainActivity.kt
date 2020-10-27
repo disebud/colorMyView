@@ -18,13 +18,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        box_three_text = findViewById(R.id.box_three_text)
-        box_four_text = findViewById(R.id.box_four_text)
-        box_five_text = findViewById(R.id.box_five_text)
+
         setListeners()
     }
 
     private fun makeColored(view : View){
+
+        box_three_text = findViewById(R.id.box_three_text)
+        box_four_text = findViewById(R.id.box_four_text)
+        box_five_text = findViewById(R.id.box_five_text)
+
         when(view.id){
 
             //boxes using Color class colors for the background
